@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="57.813" tests="5" skipped="0" failures="2" errors="0">
+<testcase classname="Apollo247 Services" name="Add COVID-19 RT-PCR Test to Cart" time="12.029">
+<system-out><![CDATA[
+Given User is on the Apollo247 home page....................................passed
+When User navigates to the COVID-19 RT-PCR test page........................passed
+And User clicks on the "Add to Cart" option.................................passed
+And User clicks on "Proceed to Cart"........................................passed
+Then User should see the test added to the cart.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Apollo247 Services" name="Search for specific Vaccine - Example #1.1" time="11.076">
+<system-out><![CDATA[
+Given User is on the Apollo247 home page....................................passed
+When User navigates to the COVID-19 RT-PCR test page........................passed
+And User clicks on the search bar...........................................passed
+And User enters Thyroid Profile (Total T3, Total T4, TSH) into the search bar.passed
+And User clicks on the search button........................................passed
+Then User should be directed to the relevant search results page............passed
+]]></system-out>
+</testcase>
+<testcase classname="Apollo247 Services" name="Enter Location for COVID-19 RT-PCR Test" time="11.152">
+<failure type="org.openqa.selenium.StaleElementReferenceException" message="stale element reference: stale element not found in the current frame
+  (Session info: chrome=123.0.6312.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7480ebeb5c62a79c5ebb0cd4dbd40e98, isElementDisplayed {id=f.C100A74491B400AC5D00EEAD88B2D1C6.d.6E97F064DC914D2C5972353751320996.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54358/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7480ebeb5c62a79c5ebb0cd4dbd40e98)] -&gt; xpath: //div[text()=&quot;Indore&quot;]]
+Session ID: 7480ebeb5c62a79c5ebb0cd4dbd40e98">
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=123.0.6312.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7480ebeb5c62a79c5ebb0cd4dbd40e98, isElementDisplayed {id=f.C100A74491B400AC5D00EEAD88B2D1C6.d.6E97F064DC914D2C5972353751320996.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54358/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7480ebeb5c62a79c5ebb0cd4dbd40e98)] -> xpath: //div[text()="Indore"]]
+Session ID: 7480ebeb5c62a79c5ebb0cd4dbd40e98
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at ApolloPageFactory.BookLabPageFactory.ConfirmLocation(BookLabPageFactory.java:183)
+	at ApolloStepDefinition.BookLabStepDefinition.user_should_see_the_selected_location_displayed_in_the_location_field(BookLabStepDefinition.java:139)
+	at ✽.User should see the selected location displayed in the location field(file:///C:/Users/YBENDALE/OneDrive/Apollo_BookLab/resource/Features/Apollo.feature:33)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on the Apollo247 home page....................................passed
+When User navigates to the COVID-19 RT-PCR test page........................passed
+And User clicks on the location bar.........................................passed
+And User enters the Location in the location field..........................passed
+And User selects the suggested location.....................................passed
+Then User should see the selected location displayed in the location field..failed
+]]></system-out>
+</testcase>
+<testcase classname="Apollo247 Services" name="Sort Full Body Checkup Tests by Price from Low to High" time="13.921">
+<system-out><![CDATA[
+Given User is on the Apollo247 home page....................................passed
+When User navigates to the lab-tests page...................................passed
+And User clicks on the Full Body Checkup option.............................passed
+And User clicks on the "Sort By" drop-down menu.............................passed
+And User selects "Price Low to High"........................................passed
+Then User should see the Full Body Checkup tests sorted by price from low to high.passed
+]]></system-out>
+</testcase>
+<testcase classname="Apollo247 Services" name="View RECOMMENDED BY Doctor Information" time="9.34">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(), &quot;Dr. Srikar Darisetty, a highly esteemed Pulmonologist and Respiratory Medicine specialist with 11 years of experience&quot;)]&quot;}
+  (Session info: chrome=123.0.6312.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46a92d7fffb98c5336c6389951085119, findElement {value=//p[contains(text(), &quot;Dr. Srikar Darisetty, a highly esteemed Pulmonologist and Respiratory Medicine specialist with 11 years of experience&quot;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54755/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46a92d7fffb98c5336c6389951085119">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(), "Dr. Srikar Darisetty, a highly esteemed Pulmonologist and Respiratory Medicine specialist with 11 years of experience")]"}
+  (Session info: chrome=123.0.6312.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46a92d7fffb98c5336c6389951085119, findElement {value=//p[contains(text(), "Dr. Srikar Darisetty, a highly esteemed Pulmonologist and Respiratory Medicine specialist with 11 years of experience")], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54755/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46a92d7fffb98c5336c6389951085119
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at ApolloPageFactory.BookLabPageFactory.information(BookLabPageFactory.java:278)
+	at ApolloStepDefinition.BookLabStepDefinition.the_user_should_be_able_to_navigate_to_the_particular_doctor_s_information_page(BookLabStepDefinition.java:189)
+	at ✽.the User should be able to navigate to the particular doctor's information page(file:///C:/Users/YBENDALE/OneDrive/Apollo_BookLab/resource/Features/Apollo.feature:47)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on the Apollo247 home page....................................passed
+When User navigates to the COVID-19 RT-PCR test page........................passed
+And the User clicks on a doctor's name......................................passed
+Then the User should be able to navigate to the particular doctor's information page.failed
+]]></system-out>
+</testcase>
+</testsuite>
